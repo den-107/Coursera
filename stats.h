@@ -23,7 +23,16 @@
 
 /* Add Your Declarations and Function Comments here */ 
 
-/**
+void print_array(unsigned char *a,int size);
+int find_mean(unsigned char *a,int size);
+unsigned char find_maximum(unsigned char *a,unsigned int size);
+unsigned char find_minimum(unsigned char *a,unsigned int size);
+void swap(unsigned char * a,unsigned char * b);
+void sort_array(unsigned char* a,int size);
+unsigned char find_median(unsigned char *a,unsigned int size);
+void print_statistics(unsigned char *a,unsigned int size);
+/*
+**
  * @brief <Add Brief Description of Function Here>
  *
  * <Add Extended Description Here>
