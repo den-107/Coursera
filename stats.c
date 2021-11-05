@@ -47,7 +47,7 @@ void main() {
 void print_array(unsigned char *a,int size)
 {
     for(int i=0;i<size;++i)
-        printf("%c ",a[i]);
+        printf("%d ",a[i]);
     printf("\n");
 }
 
@@ -107,10 +107,10 @@ unsigned char find_median(unsigned char *a,unsigned int size)
 
 void print_statistics(unsigned char *a,unsigned int size)
 {
-    printf("The median of the 1D array is %c \n",find_median(a,size));
-    printf("The mean of the 1D array is %c \n", find_mean(a,size));
-    printf("The maximum of the 1D array is %c \n", find_maximum(a,size));
-    printf("The minimum of the 1D array is %c \n", find_minimum(a,size));
+    printf("The median of the 1D array is %d \n",find_median(a,size));
+    printf("The mean of the 1D array is %d \n", find_mean(a,size));
+    printf("The maximum of the 1D array is %d \n", find_maximum(a,size));
+    printf("The minimum of the 1D array is %d \n", find_minimum(a,size));
     printf("The sorted array is \n");
     print_array(a,size);
 }
