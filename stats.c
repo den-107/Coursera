@@ -44,6 +44,11 @@ void main() {
 
 }
 
+/*
+ * function used to print an array
+ * input:  pointer to beg of array , size of array
+ * output: print array
+*/
 void print_array(unsigned char *a,int size)
 {
     for(int i=0;i<size;++i)
@@ -51,6 +56,11 @@ void print_array(unsigned char *a,int size)
     printf("\n");
 }
 
+/*
+ * function used to find mean of  an array
+ * input:  pointer to beg of array , size of array
+ * output: mean of array
+*/
 int find_mean(unsigned char *a,int size)
 {
     int sum=0;
@@ -60,6 +70,11 @@ int find_mean(unsigned char *a,int size)
     mean_array=round(sum/size);
     return mean_array;
 }
+/*
+ * function used to find max of  an array
+ * input:  pointer to beg of array , size of array
+ * output: max of array
+*/
 
 unsigned char find_maximum(unsigned char *a,unsigned int size)
 {
@@ -70,6 +85,13 @@ unsigned char find_maximum(unsigned char *a,unsigned int size)
     return max;
 }
 
+/*
+ * function used to find min of  an array
+ * input:  pointer to beg of array , size of array
+ * output: min of array
+*/
+
+
 unsigned char find_minimum(unsigned char *a,unsigned int size)
 {
     int min=a[0];
@@ -78,6 +100,12 @@ unsigned char find_minimum(unsigned char *a,unsigned int size)
             min=a[i];
     return min;
 }
+/*
+ * function used to swap elements of   an array
+ * input:  pointer to elements to be swapped
+ * output: swapped  array
+*/
+
 
 void swap(unsigned char * a,unsigned char * b)
 {
@@ -87,6 +115,12 @@ void swap(unsigned char * a,unsigned char * b)
     *b=temp;
 }
 
+/*
+ * function used to sort  an array
+ * input:  pointer to beg array , size of array
+ * output:  sorted  array
+*/
+
 
 void sort_array(unsigned char* a,int size)
 {
@@ -95,6 +129,12 @@ void sort_array(unsigned char* a,int size)
             if(a[j]>a[j+1])
                 swap(&a[j],&a[j+1]);
 }
+/*
+ * function used to find median  of  an array
+ * input:  pointer to beg of array , size of array
+ * output: median of array
+*/
+
 
 unsigned char find_median(unsigned char *a,unsigned int size)
 {
@@ -104,6 +144,13 @@ unsigned char find_median(unsigned char *a,unsigned int size)
     else
         return(round((a[size/2]+a[(size/2)-1])/2));
 }
+
+/*
+ * function used to print statistics of  an array
+ * input:  pointer to beg of array , size of array
+ * output: statistics of array printed
+*/
+
 
 void print_statistics(unsigned char *a,unsigned int size)
 {

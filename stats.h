@@ -21,7 +21,7 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/* All function comments are presented in stats.c */ 
 
 void print_array(unsigned char *a,int size);
 int find_mean(unsigned char *a,int size);
